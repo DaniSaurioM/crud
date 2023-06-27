@@ -1,0 +1,59 @@
+<%- include("components/header") %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card bg-dark">
+      <div class="card-body">   
+        <form action="/update/<%= data.id %>" method="POST">
+            <input
+              type="text"
+              name="name"
+              value="<%= data.name %>"
+              class="form-control mb-2"
+              autofocus
+            />
+            <input
+              type="text"
+              name="lastName"
+              value="<%= data.lastName %>"
+              class="form-control mb-2"
+            />
+            <input
+              type="date"
+              name="birthday"
+              value="<%= data.birthday %>" 
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="gender"
+              value="<%= data.gender %>"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="address"
+              value="<%= data.address %>"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="maritalStatus"
+              value="<%= data.maritalStatus %>"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="identification"
+              value="<%= data.identification %>"
+              class="form-control mb-2"
+            />
+    
+            <button type="submit" class="btn btn-info">ACTUALIZAR INFORMARCION</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("components/footer") %>
